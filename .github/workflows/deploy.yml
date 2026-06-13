@@ -17,5 +17,6 @@ jobs:
           username: ${{ secrets.DO_USER }}
           key: ${{ secrets.DO_SSH_KEY }}
           script: |
-            cd /var/www/html/yogaensalada-site
-            git pull origin main
+              git config --global --add safe.directory /var/www/html/yogaensalada-site
+              cd /var/www/html/yogaensalada-site
+              git pull origin main
