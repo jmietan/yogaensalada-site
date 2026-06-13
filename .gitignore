@@ -1,0 +1,23 @@
+# Core security exclusions
+wp-config.php
+.env
+
+# WordPress Core system files (Do not version control core; let the server handle it)
+wp-admin/
+wp-includes/
+*.php
+!wp-content/
+
+# Exclude dynamic user uploads and logs
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/
+wp-content/backup-db/
+*.log
+
+# Server and OS overhead files
+.htaccess
+nginx.conf
+.DS_Store
+Thumbs.db
+
